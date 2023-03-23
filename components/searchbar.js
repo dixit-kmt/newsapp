@@ -16,7 +16,7 @@ export function Searchbar(props){
     const options = {
       method: "GET",
       headers: {
-        Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_KEY2}`,
+        Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_KEY}`,
       },
     };
     const requestUrl = `https://newsapi.org/v2/everything?q=${searchValue}`;
