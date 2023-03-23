@@ -1,34 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+# NewsWave | NewsApp
+
+[NewsWave](https://newswave.vercel.app/) is a news app built with Next.js, React, and NewsAPI that allows users to search for news articles by keyword or category, as well as view the top headlines of the day. The app provides a user-friendly interface.
+
+> **_NOTE:_**  Search feature is only working on the localhost due to the developer plan of NewsAPI.
+
+**Live Here:** [NewsWave](https://newswave.vercel.app/)
+
+## Features
+
+- Search for news articles by keyword (only working on localhost)
+- View top headlines of the day
+- Pagination on top news page
+- View news category wise
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js and npm installed on your local machine
+- API key from [NewsAPI](https://newsapi.org/)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### Installation
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ 1. Clone the repository: 
+ `git clone https://github.com/your-username/newsapp.git`
+ 
+ 2. Navigate to the project directory: 
+ `cd newsapp`
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+3. Install dependencies
+`npm install`
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+4. Create a `.env` file and add your NewsAPI API key:
+ `NEXT_PUBLIC_NEWS_KEY = your-api-key`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+5. Run the development server
+`npm run dev`
 
-## Learn More
+6. Open `http://localhost:3000` in your browser
+## Usage
 
-To learn more about Next.js, take a look at the following resources:
+### Searching for articles
+> **_NOTE:_**  This feature is only working on the localhost due to the developer plan of NewsAPI.
+1. Type in a keyword or phrase in the search bar
+2. Results will appear on the page with a summary of each article
+3. Click on an article to read the full story on the source website
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Viewing top headlines
+1. Click on the "Top News" button in the navigation bar
+2. Results will appear on the page with a summary of each article
+3. Click on an article to read the full story on the source website
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Viewing articles category wise
+1. Select the category from the side bar on "Top News" page
+2. Results will appear on the page with a summary of each article in the selected category
+3. Click on an article to read the full story on the source website
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+## Screenshots
+
+**Home Page**![Home Page](screenshots/homepage.png)
+
+**Search**![Search Page](screenshots/search.png)
+
+**Top News**![Top News Page](screenshots/topnews.png)
+
+**Category**![Category Page](screenshots/category.png)
+
+
+
