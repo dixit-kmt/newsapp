@@ -1,0 +1,105 @@
+.grid__container {
+	 padding: 5rem;
+	 font-family: "Inter", sans-serif;
+	 margin-left: 70px;
+}
+ @media (max-width: 60em) {
+	 .grid__container {
+		 padding: 3rem;
+	}
+}
+.grid{
+	 display: grid;
+	 grid-gap: 4rem;
+	 grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	 align-items: start;
+}
+ @media (max-width: 60em) {
+	 .grid {
+		 grid-gap: 3rem;
+		 grid-template-columns: auto;
+	}
+}
+.grid__item{
+	 border-radius: 0.4rem;
+	 overflow: hidden;
+	 box-shadow: 0 3rem 6rem rgba(0, 0, 0, .1);
+	 transition: 0.2s;
+}
+.grid__item:hover{
+	 transform: translateY(-0.5%);
+	 box-shadow: 0 4rem 8rem rgba(0, 0, 0, .2);
+}
+.card__img {
+	 display: block;
+	 width: 100%;
+	 height: 18rem;
+	 object-fit: cover;
+}
+.card__content {
+	 padding: 2rem 2rem;
+}
+.card__header {
+	 font-size: 1.5rem;
+	 color: #0d0d0d;
+	 margin-bottom: 1.5rem;
+}
+.card__text {
+	 font-size: 1rem;
+	 letter-spacing: 0.1rem;
+	 line-height: 1.7;
+	 color: #3d3d3d;
+	 margin-bottom: 2.5rem;
+}
+.card__btn {
+	 display: block;
+	 width: 100%;
+	 padding: 1rem;
+	 font-size: 1.3rem;
+	 text-align: center;
+	 color: #3363ff;
+	 background-color: #e6ecff;
+	 border: none;
+	 border-radius: 0.4rem;
+	 transition: 0.2s;
+	 cursor: pointer;
+}
+.card__btn span {
+	 margin-left: 1rem;
+	 transition: 0.2s;
+}
+.card__btn:hover, .card__btn:active {
+	 background-color: #dce4ff;
+}
+.card__btn:hover span, .card__btn:active span {
+	 margin-left: 1.5rem;
+}
+
+.paginator {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paginator div {
+  margin: 25px;
+}
+.paginator .active {
+  cursor: pointer;
+}
+.paginator .disabled {
+  cursor: not-allowed;
+  color: rgb(179, 179, 179);
+}
+.pageno{
+	color: #3363ff;
+	font-weight: bold;
+	width: 40px;
+	height: 40px;
+	background-color: #dce4ff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+ 
