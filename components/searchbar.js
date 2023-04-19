@@ -19,9 +19,9 @@ export function Searchbar(props){
         Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_KEY}`,
       },
     };
-    const requestUrl = `https://newsapi.org/v2/everything?q=${searchValue}`;
+    const requestUrl = `https://newsapi.org/v2/everything?q=${searchValue}&apiKey=d7960794c276425ea7dc9f48811bba54`;
 
-    fetch(requestUrl, options)
+    fetch(requestUrl)
       .then((response) => {
         return response.json();
       })
